@@ -48,8 +48,7 @@ const index = ({ events }) => {
                         gap: "2rem",
                     }}
                 >
-                    {/* {events &&
-                        events.length > 0 &&
+                    {events &&
                         events.map((event, index) => {
                             return (
                                 <EventItem
@@ -58,27 +57,28 @@ const index = ({ events }) => {
                                     image={event.URLs[0]}
                                 />
                             );
-                        })} */}
+                        })}
                 </Box>
             </Container>
         </PageLayout>
     );
 };
 
-// export const getServerSideProps = async (context) => {
-//     const imagesRef = collection(db, "events");
+export const getServerSideProps = async (context) => {
+    const imagesRef = collection(db, "events");
+    let events = [];
+    const queriedDocuments = await getDocs(imagesRef);
 
-//     const queriedDocuments = await getDocs(imagesRef);
-//     let events = [];
-//     queriedDocuments.docs.forEach((doc, index) => {
-//         events = [...events, doc.data()];
-//     });
-
-//     return {
-//         props: {
-//             events,
-//         },
-//     };
-// };
+    if (queriedDocuments) {
+        queriedDocuments.docs.forEach((doc, index) => {
+            events = [...events, doc.data()];
+        });
+    }
+    return {
+        props: {
+            events,
+        },
+    };
+};
 
 export default index;
