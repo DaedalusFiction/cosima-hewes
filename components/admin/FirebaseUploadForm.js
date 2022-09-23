@@ -208,6 +208,7 @@ const FirebaseUploadForm = ({
                 <Input
                     variant="contained"
                     type="file"
+                    accept="image/jpeg, image/png"
                     sx={{ display: "none" }}
                     ref={fileInputRef}
                     onChange={handleImagesChange}
