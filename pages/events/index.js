@@ -5,6 +5,7 @@ import React from "react";
 import EventItem from "../../components/Events/EventItem";
 import PageLayout from "../../components/layout/PageLayout";
 import { db } from "../../firebase";
+import useGetImages from "../../hooks/useGetImages";
 import { formatDate } from "../../utility/general";
 
 // const events = [
@@ -47,38 +48,37 @@ const index = ({ events }) => {
                         gap: "2rem",
                     }}
                 >
-                    {events.length > 0 &&
+                    {/* {events &&
+                        events.length > 0 &&
                         events.map((event, index) => {
                             return (
                                 <EventItem
                                     key={index}
                                     fields={event.fields}
-                                    image={
-                                        event.URLs.length > 0 && event.URLs[0]
-                                    }
+                                    image={event.URLs[0]}
                                 />
                             );
-                        })}
+                        })} */}
                 </Box>
             </Container>
         </PageLayout>
     );
 };
 
-export const getServerSideProps = async (context) => {
-    const imagesRef = collection(db, "events");
+// export const getServerSideProps = async (context) => {
+//     const imagesRef = collection(db, "events");
 
-    const queriedDocuments = await getDocs(imagesRef);
-    let events = [];
-    queriedDocuments.docs.forEach((doc, index) => {
-        events = [...events, doc.data()];
-    });
+//     const queriedDocuments = await getDocs(imagesRef);
+//     let events = [];
+//     queriedDocuments.docs.forEach((doc, index) => {
+//         events = [...events, doc.data()];
+//     });
 
-    return {
-        props: {
-            events,
-        },
-    };
-};
+//     return {
+//         props: {
+//             events,
+//         },
+//     };
+// };
 
 export default index;
