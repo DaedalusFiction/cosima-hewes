@@ -1,12 +1,6 @@
-import { Box, Typography } from "@mui/material";
-import { Container } from "@mui/system";
-import { collection, getDocs, query, where } from "firebase/firestore";
 import React from "react";
-import EventItem from "../../components/Events/EventItem";
+import EventsItems from "../../components/Events/EventsItems";
 import PageLayout from "../../components/layout/PageLayout";
-import { db } from "../../firebase";
-import useGetImages from "../../hooks/useGetImages";
-import { formatDate } from "../../utility/general";
 
 // const events = [
 //     {
@@ -34,57 +28,12 @@ import { formatDate } from "../../utility/general";
 //     },
 // ];
 
-const index = ({ events }) => {
+const index = () => {
     return (
         <PageLayout name="EVENTS">
-            <Container className="section" maxWidth="lg">
-                <Typography variant="h2" sx={{ marginBottom: ".5em" }}>
-                    Upcoming:
-                </Typography>
-                <Box
-                    sx={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "2rem",
-                    }}
-                >
-                    {events &&
-                        events.map((event, index) => {
-                            return (
-                                <EventItem
-                                    key={index}
-                                    fields={event.fields}
-                                    image={event.URLs[0]}
-                                />
-                            );
-                        })}
-                </Box>
-            </Container>
+            <EventsItems />
         </PageLayout>
     );
-};
-
-export const getServerSideProps = async (context) => {
-    // const category = context.params.category;
-    // const subCategory = context.params.subCategory;
-    const imagesRef = collection(db, "events");
-    const q1 = query(
-        imagesRef,
-
-        where("categories", "array-contains", "event")
-    );
-
-    const queriedDocuments = await getDocs(q1);
-    let events = [];
-    queriedDocuments.docs.forEach((doc, index) => {
-        events = [...events, doc.data()];
-    });
-
-    return {
-        props: {
-            events,
-        },
-    };
 };
 
 export default index;

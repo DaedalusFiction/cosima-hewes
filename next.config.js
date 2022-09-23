@@ -9,7 +9,7 @@ const nextConfig = {
             "googleapis.com",
             "cosimahewes.netlify.app",
         ],
-        formats: ["image/webp", "image/avif"],
+        formats: ["image/webp", "image/avif, image/jpeg, image/png"],
     },
 };
 
