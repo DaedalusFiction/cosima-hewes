@@ -6,9 +6,16 @@ import EventItem from "./EventItem";
 
 const EventsItems = () => {
     const [events] = useGetEvents("events");
+    const handle = () => {
+        console.log(events[0].data());
+    };
     return (
         <Container className="section" maxWidth="lg">
-            <Typography variant="h2" sx={{ marginBottom: ".5em" }}>
+            <Typography
+                variant="h2"
+                onClick={handle}
+                sx={{ marginBottom: ".5em" }}
+            >
                 Upcoming:
             </Typography>
             <Box
@@ -23,8 +30,8 @@ const EventsItems = () => {
                         return (
                             <EventItem
                                 key={index}
-                                fields={event.fields}
-                                image={event.URLs[0]}
+                                fields={event.data().fields}
+                                image={event.data().URLs[0]}
                             />
                         );
                     })}
