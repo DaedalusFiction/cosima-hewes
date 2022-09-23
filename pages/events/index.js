@@ -48,7 +48,7 @@ const index = ({ events }) => {
                         gap: "2rem",
                     }}
                 >
-                    {events &&
+                    {/* {events &&
                         events.map((event, index) => {
                             return (
                                 <EventItem
@@ -57,7 +57,7 @@ const index = ({ events }) => {
                                     image={event.URLs[0]}
                                 />
                             );
-                        })}
+                        })} */}
                 </Box>
             </Container>
         </PageLayout>
