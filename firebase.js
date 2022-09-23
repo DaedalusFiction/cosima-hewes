@@ -5,12 +5,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAZQ47jU4XYvuFpGE-cq0FYZuu0eCIMnmU",
-    authDomain: "artist-template-3e567.firebaseapp.com",
-    projectId: "artist-template-3e567",
-    storageBucket: "artist-template-3e567.appspot.com",
-    messagingSenderId: "665743102092",
-    appId: "1:665743102092:web:f6f8533cad948acf88eba9",
+    apiKey: "AIzaSyCn7ZtUX_uHL2_Y5gJvtxOoNlNwa1q4bFQ",
+    authDomain: "cosima-hewes.firebaseapp.com",
+    projectId: "cosima-hewes",
+    storageBucket: "cosima-hewes.appspot.com",
+    messagingSenderId: "871476288332",
+    appId: "1:871476288332:web:4519b261f4fddb15f10de9",
 };
 
 // provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
