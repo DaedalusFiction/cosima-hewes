@@ -314,16 +314,29 @@ const galleryCategories = [
         subCategories: [],
     },
     {
+        name: "fantasy farm",
+        href: "/gallery/fantasyfarm",
+        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        subCategories: [],
+    },
+    {
         name: "portraits",
         href: "/gallery/portraits",
         image: { url: "/images/placeholder.webp", alt: "alt text" },
         subCategories: [],
     },
-    // {
-    //     name: "Black and White",
-    //     href: "/gallery/black%20and%20white",
-    //     image: { url: "/images/placeholder.webp", alt: "alt text" },
-    // },
+    {
+        name: "the female collective",
+        href: "/gallery/thefemalecollective",
+        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        subCategories: [],
+    },
+    {
+        name: "surreal",
+        href: "/gallery/surreal",
+        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        subCategories: [],
+    },
 ];
 
 const galleryConfig = {
