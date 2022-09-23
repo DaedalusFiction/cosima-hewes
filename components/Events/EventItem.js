@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import lightTheme from "../../styles/themes/lightTheme";
 import { ArrowRightAlt } from "@mui/icons-material";
-// import EventImage from "./EventImage";
+import EventImage from "./EventImage";
 
 const EventItem = ({ fields, image }) => {
     return (
@@ -11,7 +11,7 @@ const EventItem = ({ fields, image }) => {
             {fields && (
                 <Grid container spacing={8}>
                     <Grid item xs={12} sm={5}>
-                        {/* <Box>{image && <EventImage image={image} />}</Box> */}
+                        <Box>{image && <EventImage image={image} />}</Box>
                     </Grid>
                     <Grid item xs={12} sm={7}>
                         <Box
@@ -24,15 +24,17 @@ const EventItem = ({ fields, image }) => {
                         >
                             <Box>
                                 <Typography variant="h2">
-                                    {fields[0]}
+                                    {fields[0].value}
                                 </Typography>
-                                <Typography variant="h4">{`${fields[1]} ${
-                                    fields[2] && "through"
-                                } ${fields[2]}`}</Typography>
+                                <Typography variant="h4">{`${fields[1].value} ${
+                                    fields[2].value && "through"
+                                } ${fields[2].value}`}</Typography>
                                 {
-                                    <Typography variant="h5">{`${fields[3]}${
-                                        fields[4] && ","
-                                    } ${fields[4]}`}</Typography>
+                                    <Typography variant="h5">{`${
+                                        fields[3].value
+                                    }${fields[4].value && ","} ${
+                                        fields[4].value
+                                    }`}</Typography>
                                 }
                                 <br />
                                 <Typography
@@ -41,19 +43,19 @@ const EventItem = ({ fields, image }) => {
                                             .lightMuted,
                                     }}
                                 >
-                                    {fields[5]}
+                                    {fields[5].value}
                                 </Typography>
                                 <br />
                             </Box>
                             <Box>
-                                <Button
+                                {/* <Button
                                     variant="contained"
-                                    href={fields[6]}
+                                    href={fields[6].value}
                                     size="large"
                                     endIcon={<ArrowRightAlt />}
                                 >
                                     more details
-                                </Button>
+                                </Button> */}
                             </Box>
                         </Box>
                     </Grid>

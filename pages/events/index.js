@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import React from "react";
 import EventItem from "../../components/Events/EventItem";
 import PageLayout from "../../components/layout/PageLayout";
@@ -48,7 +48,7 @@ const index = ({ events }) => {
                         gap: "2rem",
                     }}
                 >
-                    {/* {events &&
+                    {events &&
                         events.map((event, index) => {
                             return (
                                 <EventItem
@@ -57,7 +57,7 @@ const index = ({ events }) => {
                                     image={event.URLs[0]}
                                 />
                             );
-                        })} */}
+                        })}
                 </Box>
             </Container>
         </PageLayout>
@@ -65,15 +65,21 @@ const index = ({ events }) => {
 };
 
 export const getServerSideProps = async (context) => {
+    // const category = context.params.category;
+    // const subCategory = context.params.subCategory;
     const imagesRef = collection(db, "events");
-    let events = [];
-    const queriedDocuments = await getDocs(imagesRef);
+    const q1 = query(
+        imagesRef,
 
-    if (queriedDocuments) {
-        queriedDocuments.docs.forEach((doc, index) => {
-            events = [...events, doc.data()];
-        });
-    }
+        where("categories", "array-contains", "event")
+    );
+
+    const queriedDocuments = await getDocs(q1);
+    let events = [];
+    queriedDocuments.docs.forEach((doc, index) => {
+        events = [...events, doc.data()];
+    });
+
     return {
         props: {
             events,
