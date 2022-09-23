@@ -40,7 +40,7 @@ const FirebaseUploadForm = ({
 
     const handleImagesChange = (e) => {
         setFileError("false");
-        if (e.target.files[0].size > 1097152) {
+        if (e.target.files[0].size > 3097152) {
             setFileError("File size must be less than 1MB");
             return;
         }
@@ -215,6 +215,10 @@ const FirebaseUploadForm = ({
                 >
                     Select File
                 </Input>
+                <br />
+                <Typography variant="caption">
+                    .jpg and .png only. File size must be less than 2MB.
+                </Typography>
             </Box>
             <Grid container spacing={1}>
                 {previews.length > 0 &&

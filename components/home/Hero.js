@@ -62,7 +62,7 @@ const Hero = () => {
                         transition: "300ms",
                         opacity: { xs: "0", md: "70%" },
                         "&:hover": {
-                            opacity: "0%",
+                            opacity: "70%",
                         },
                         writingMode: { xs: "vertical-lr", md: "inherit" },
                         textOrientation: { xs: "upright", md: "inherit" },

@@ -14,7 +14,7 @@ import lightTheme from "./styles/themes/lightTheme";
 
 // 1. Meta
 
-const siteName = "ARTIST PORTFOLIO";
+const siteName = "Cosima Hewes";
 // const siteName = "Cosima Hewes";
 
 // 2. Layout
@@ -250,28 +250,28 @@ const blockPhotoContentTwo = {
 // 4. Services
 // 5. Projects
 
-const galleryStylesCategories = [
-    {
-        name: "Black and White",
-        href: "/gallery/styles/black%20and%20white",
-        image: {
-            url: "/images/placeholder.webp",
-            alt: "alt gallery image text",
-        },
-    },
-    {
-        name: "Mixed Media",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-    },
-    {
-        name: "Acrylic",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-    },
-    {
-        name: "Watercolor",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-    },
-];
+// const galleryStylesCategories = [
+//     {
+//         name: "Black and White",
+//         href: "/gallery/styles/black%20and%20white",
+//         image: {
+//             url: "/images/placeholder.webp",
+//             alt: "alt gallery image text",
+//         },
+//     },
+//     {
+//         name: "Mixed Media",
+//         image: { url: "/images/placeholder.webp", alt: "alt text" },
+//     },
+//     {
+//         name: "Acrylic",
+//         image: { url: "/images/placeholder.webp", alt: "alt text" },
+//     },
+//     {
+//         name: "Watercolor",
+//         image: { url: "/images/placeholder.webp", alt: "alt text" },
+//     },
+// ];
 
 const galleryCategories = [
     {
@@ -291,18 +291,18 @@ const galleryCategories = [
                 },
             },
             {
-                name: "horses and cows",
-                href: "/gallery/animals/horses",
+                name: "fowl and fauna",
+                href: "/gallery/animals/fowlandfauna",
                 image: { url: "/images/placeholder.webp", alt: "alt text" },
             },
             {
-                name: "turtles",
-                href: "/gallery/animals/turtles",
+                name: "cows and horses",
+                href: "/gallery/animals/cowsandhorses",
                 image: { url: "/images/placeholder.webp", alt: "alt text" },
             },
             {
-                name: "chickens",
-                href: "/gallery/animals/chickens",
+                name: "cats and dogs",
+                href: "/gallery/animals/catsanddogs",
                 image: { url: "/images/placeholder.webp", alt: "alt text" },
             },
         ],
@@ -311,61 +311,13 @@ const galleryCategories = [
         name: "landscapes",
         href: "/gallery/landscapes",
         image: { url: "/images/placeholder.webp", alt: "alt text" },
-        subCategories: [
-            {
-                name: "mountains",
-                href: "/gallery/landscapes/mountains",
-                image: {
-                    url: "/images/placeholder.webp",
-                    alt: "alt gallery image text",
-                },
-            },
-            {
-                name: "waterfalls",
-                href: "/gallery/landscapes/waterfalls",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "rivers",
-                href: "/gallery/landscapes/rivers",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "valleys",
-                href: "/gallery/landscapes/valleys",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-        ],
+        subCategories: [],
     },
     {
         name: "portraits",
         href: "/gallery/portraits",
         image: { url: "/images/placeholder.webp", alt: "alt text" },
-        subCategories: [
-            {
-                name: "men",
-                href: "/gallery/portraits/men",
-                image: {
-                    url: "/images/placeholder.webp",
-                    alt: "alt gallery image text",
-                },
-            },
-            {
-                name: "women",
-                href: "/gallery/portraits/women",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "children",
-                href: "/gallery/portraits/children",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "elderly",
-                href: "/gallery/portraits/elderly",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-        ],
+        subCategories: [],
     },
     // {
     //     name: "Black and White",
@@ -375,8 +327,8 @@ const galleryCategories = [
 ];
 
 const galleryConfig = {
-    categories: [],
-    subCategories: [],
+    categories: ["all"],
+    subCategories: ["all"],
     fields: [
         { name: "Title", type: "text", value: "" },
         {
@@ -538,7 +490,6 @@ export {
     navbar,
     header,
     galleryCategories,
-    galleryStylesCategories,
     galleryConfig,
     eventConfig,
     heroContent,
