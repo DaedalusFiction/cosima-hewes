@@ -1,7 +1,9 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import ContactForm from "../../components/contact/ContactForm";
+import NativeImage from "../../components/general/NativeImage";
 import PageLayout from "../../components/layout/PageLayout";
+import { contactContent } from "../../siteInfo";
 
 const formData = [
     { name: "Name", type: "text", value: "" },
@@ -20,18 +22,32 @@ const index = () => {
             <Container maxWidth="lg" className="section">
                 <Grid container spacing={6}>
                     <Grid item xs={12} md={6}>
-                        <Typography variant="h3">Get in Touch</Typography>
-                        <br />
-                        <Typography>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Ipsum quos delectus, accusamus tempore
-                            reiciendis ducimus, ex temporibus quam dolor
-                            voluptas at nostrum rerum autem ullam odio nisi,
-                            maxime praesentium magni.
-                        </Typography>
+                        <Box
+                            sx={{
+                                height: "100%",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <Box>
+                                <Typography variant="h3">
+                                    Get in Touch!
+                                </Typography>
+                                <br />
+                                <Typography>
+                                    Email: ecosima@yahoo.com
+                                </Typography>
+                                <br />
+                                <Typography>Telephone: 413-625-6092</Typography>
+                            </Box>
+                        </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <ContactForm />
+                        <NativeImage
+                            image={contactContent.image}
+                            maxSize={2000}
+                        />
                     </Grid>
                 </Grid>
             </Container>

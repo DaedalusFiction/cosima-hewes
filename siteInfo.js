@@ -49,20 +49,21 @@ const heroContent = {
 
 const homeGalleryContent = {
     images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home1.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home2.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home3.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home4.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home5.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home6.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home7.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home8.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
     ],
+    text: "Art inspired by life inspired by art inspired by life etc.",
 };
 
 const servicesContent = [
@@ -250,29 +251,6 @@ const blockPhotoContentTwo = {
 // 4. Services
 // 5. Projects
 
-// const galleryStylesCategories = [
-//     {
-//         name: "Black and White",
-//         href: "/gallery/styles/black%20and%20white",
-//         image: {
-//             url: "/images/placeholder.webp",
-//             alt: "alt gallery image text",
-//         },
-//     },
-//     {
-//         name: "Mixed Media",
-//         image: { url: "/images/placeholder.webp", alt: "alt text" },
-//     },
-//     {
-//         name: "Acrylic",
-//         image: { url: "/images/placeholder.webp", alt: "alt text" },
-//     },
-//     {
-//         name: "Watercolor",
-//         image: { url: "/images/placeholder.webp", alt: "alt text" },
-//     },
-// ];
-
 const galleryCategories = [
     {
         name: "animals",
@@ -340,8 +318,8 @@ const galleryCategories = [
 ];
 
 const galleryConfig = {
-    categories: ["all"],
-    subCategories: ["all"],
+    categories: [],
+    subCategories: [],
     fields: [
         { name: "Title", type: "text", value: "" },
         {
@@ -360,10 +338,10 @@ const galleryConfig = {
 // 7a. Artists
 
 const leadProfile = {
-    image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    name: "Artist Name",
+    image: { url: "/images/about1.webp", alt: "cosima and her partner" },
+    name: "Cosima Hewes",
     content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit.\n\nQuibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda. Laboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque.\n\nDolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.\n\nLorem ipsum, dolor sit amet consectetur adipisicing elit.\n\nQuibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda. Laboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque.\n\nDolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
+        "After graduating from the university of Vermont in 1990, I moved to a rural commune near Charlottesville, Virginia Where I milked cows, wove hammocks and learned carpentry skills which would later come in handy. Some days, after fulfilling my weekly 48hr work obligation, I painted in the loft of a dusty barn and then in an old pillow shop where I'd managed to carve out studio space and began my delve into oil paints with a series of surreal portraits. /\n\nTen years later, my husband and I moved to western MA where after a long search, we purchased a run down house on a scrappy plot of land. With lots of love and many hardworking hours, we've sculpted our Ashfield property into the sustainable homestead we recently christened “Jumping Goat Farm.” Most of the work you will see here was created in the post and beam studio where I now work.",
 };
 
 const secondaryProfiles = [
@@ -390,29 +368,56 @@ const secondaryProfiles = [
 // 7b. Studio
 
 const studioContent = {
-    imageOne: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    imageOne: { url: "/images/studio1.webp", alt: "cosima's studio" },
     imageTwo: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
     imageThree: {
         url: "/images/placeholder.webp",
         alt: "alt placeholder text",
     },
-    header: "Studio Header",
+    header: "",
     content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
+        "In the winter of 2013, my husband and I staggered on the snowy slope of our neighbors' wood lot felling the white oaks that we rolled and milled the following summer with a portable mill. This was to become the frame of my 16 x 20 post and beam studio that was erected in September of 2014, with the help of friends and family in what was a festive barn-raising. That winter with a newly installed wood stove cranking, I plastered the inside walls and began painting in earnest once more.",
 };
 
 // 7c. Work
 
 const workContent = {
-    imageOne: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    imageOne: { url: "/images/work1.webp", alt: "a cuddly baby goat" },
     imageTwo: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
     imageThree: {
-        url: "/images/placeholder.webp",
-        alt: "alt placeholder text",
+        url: "/images/work1.webp",
+        alt: "a cuddly goat",
     },
     header: "Work Header",
     content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
+        "With daily chores that include milking the goats, tending the chickens, feeding the cat, walking the dog(s) and working the gardens, it is no wonder that my most unassuming models are my ever companions. Sure they are cute, sure they are willing, but it is their earnest, sometimes contemplative, often silly energy that amuses and compels me to the studio.",
+};
+
+const commissionsContent = {
+    backgroundColor: lightTheme.palette.background.accentLight,
+    title: "Commissions",
+    content:
+        "This is the mosaic section content. Here you can describe whatever you like about your service and the button below can link to any page in this website or any external site.",
+    button: {
+        text: "learn more",
+        href: "/about",
+        variant: "contained",
+    },
+    images: [
+        { url: "/images/commissions1.webp", alt: "commissioned artwork" },
+        { url: "/images/commissions2.webp", alt: "commissioned artwork" },
+        { url: "/images/commissions3.webp", alt: "commissioned artwork" },
+    ],
+};
+
+const contactContent = {
+    title: "GET IN TOUCH",
+    content:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
+    image: {
+        url: "/images/placeholder.webp",
+        alt: "painting in progress",
+    },
 };
 
 // 8. Social Media
@@ -426,7 +431,10 @@ const processSteps = [
         name: "STEP ONE",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: {
+            url: "/images/process/process1.webp",
+            alt: "painting in progress",
+        },
         reverse: false,
     },
     {
@@ -434,7 +442,10 @@ const processSteps = [
         name: "STEP TWO",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: {
+            url: "/images/process/process2.webp",
+            alt: "painting in progress",
+        },
         reverse: true,
     },
     {
@@ -442,7 +453,10 @@ const processSteps = [
         name: "STEP THREE",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.\n\nDolore ipsa sed asperiores voluptatibus nam modi.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: {
+            url: "/images/process/process3.webp",
+            alt: "painting in progress",
+        },
         reverse: false,
     },
     {
@@ -450,7 +464,32 @@ const processSteps = [
         name: "STEP FOUR",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: {
+            url: "/images/process/process4.webp",
+            alt: "painting in progress",
+        },
+        reverse: true,
+    },
+    {
+        title: "Step Title",
+        name: "STEP FIVE",
+        content:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
+        image: {
+            url: "/images/process/process5.webp",
+            alt: "painting in progress",
+        },
+        reverse: false,
+    },
+    {
+        title: "Step Title",
+        name: "STEP SIX",
+        content:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
+        image: {
+            url: "/images/process/process6.webp",
+            alt: "painting in progress",
+        },
         reverse: true,
     },
 ];
@@ -478,8 +517,6 @@ const eventConfig = {
 
 const pages = [
     { name: "GALLERY", href: "/gallery", subPages: galleryCategories },
-    { name: "PROCESS", href: "/process", subPages: [] },
-    { name: "SERVICES", href: "/services", subPages: [] },
     {
         name: "ABOUT",
         href: "/about",
@@ -487,6 +524,7 @@ const pages = [
             { name: "The Artist", href: "/about/artist" },
             { name: "The Studio", href: "/about/studio" },
             { name: "The Work", href: "/about/work" },
+            { name: "The Process", href: "/about/process" },
         ],
     },
     {
@@ -494,6 +532,7 @@ const pages = [
         href: "/events",
         subPages: [],
     },
+    { name: "COMMISSIONS", href: "/services", subPages: [] },
     { name: "ADMIN", href: "/admin", subPages: [] },
 ];
 
@@ -507,6 +546,8 @@ export {
     eventConfig,
     heroContent,
     homeGalleryContent,
+    commissionsContent,
+    contactContent,
     blockTextOne,
     blockTextTwo,
     blockTextThree,

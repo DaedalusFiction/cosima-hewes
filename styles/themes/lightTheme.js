@@ -34,8 +34,8 @@ lightTheme = createTheme(lightTheme, {
     },
     typography: {
         h1: {
-            // fontFamily: "EB Garamond",
-            fontFamily: "Raleway",
+            fontFamily: "EB Garamond",
+            // fontFamily: "Raleway",
             color: lightTheme.palette.custom.light,
             // color: lightTheme.palette.primary.off,
             fontWeight: "400",

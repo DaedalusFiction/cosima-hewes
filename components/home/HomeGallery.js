@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
+import { homeGalleryContent } from "../../siteInfo";
 import lightTheme from "../../styles/themes/lightTheme";
 import NativeImage from "../general/NativeImage";
 import SizedImage from "../general/SizedImage";
@@ -63,7 +64,7 @@ const HomeGallery = ({ images }) => {
                         <NativeImage maxSize={2000} image={images[6]} />
                     </Box>
                 </Grid>
-                <Grid item xs={12} lg={5}>
+                {/* <Grid item xs={12} lg={5}>
                     <Box
                         sx={{
                             display: "flex",
@@ -113,78 +114,21 @@ const HomeGallery = ({ images }) => {
                     >
                         <NativeImage maxSize={600} image={images[12]} />
                     </Box>
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12}>
                     <Box
                         sx={{
                             background: lightTheme.palette.background.default,
                             position: "relative",
                             zIndex: "40",
-                            padding: "10rem 0",
+                            padding: "12rem 0",
                         }}
                     >
                         <Container maxWidth="md">
                             <Box className="flex-center">
                                 <Box>
                                     <Typography>
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Earum placeat
-                                        obcaecati quos eaque vero veritatis,
-                                        recusandae tenetur? Tempore, quod dicta?
-                                    </Typography>
-                                    <br />
-                                    <Typography>
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Doloremque
-                                        consequuntur voluptatum distinctio harum
-                                        autem quisquam ex tenetur! Quam nesciunt
-                                        expedita vitae modi doloribus
-                                        perspiciatis unde, incidunt consequatur,
-                                        similique sequi omnis porro eum debitis
-                                        culpa! Itaque quaerat possimus, deleniti
-                                        est doloremque aut! Atque voluptates
-                                        autem repellendus voluptate rerum
-                                        cupiditate dolorem quibusdam?
-                                    </Typography>
-                                    <br />
-                                    <Typography>
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Dolorem quos soluta
-                                        dicta. Quas aliquid vero quos inventore,
-                                        quod ipsa ut iste dolorum eveniet,
-                                        recusandae animi fugiat a quisquam quia
-                                        ad nulla iusto fugit expedita debitis
-                                        est architecto, autem sapiente?
-                                        Voluptatem.
-                                    </Typography>
-                                    <br />
-                                    <Typography>
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Minima iusto commodi
-                                        perferendis dolorum laboriosam eligendi
-                                        similique porro? Natus debitis dolore
-                                        assumenda. Magni tempore quisquam
-                                        dolorum, dolores, sequi totam
-                                        dignissimos beatae adipisci natus
-                                        corrupti tenetur dolor inventore dolore!
-                                        In non porro, temporibus commodi autem
-                                        laudantium adipisci optio esse sint ex
-                                        blanditiis vitae, exercitationem culpa
-                                        tenetur aliquid. Incidunt, obcaecati
-                                        cupiditate? Animi nulla in deserunt
-                                        labore iusto totam, nam laudantium
-                                        maxime facilis doloribus?
-                                    </Typography>
-                                    <br />
-                                    <Typography>
-                                        Lorem ipsum dolor sit amet.
-                                    </Typography>
-                                    <br />
-                                    <Typography>
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Modi natus, tempore ut
-                                        dolorem porro facilis neque suscipit
-                                        est. Odit, qui!
+                                        {homeGalleryContent.text}
                                     </Typography>
                                 </Box>
                             </Box>

@@ -70,7 +70,9 @@ const FirebaseUploadForm = ({
     };
 
     const handleRemoveSelectedImage = (index) => {
-        const newSelectedImages = selectedImages.splice(index, 1);
+        const newSelectedImages = selectedImages.filter(
+            (myPreview, myIndex) => myIndex !== index
+        );
         setSelectedImages(newSelectedImages);
     };
 

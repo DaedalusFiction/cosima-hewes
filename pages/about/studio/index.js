@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import SizedImage from "../../../components/general/SizedImage";
+import NativeImage from "../../../components/general/NativeImage";
 import {
     leadProfile,
     secondaryProfiles,
@@ -16,9 +16,8 @@ const index = () => {
             <Box className="section">
                 <Grid container spacing={6}>
                     <Grid item xs={12} md={6}>
-                        <SizedImage
-                            height="30rem"
-                            width="100%"
+                        <NativeImage
+                            maxSize={2000}
                             image={studioContent.imageOne}
                         />
                     </Grid>

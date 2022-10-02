@@ -1,6 +1,6 @@
-import PageLayout from "../../components/layout/PageLayout";
-import ProcessStep from "../../components/process/ProcessStep";
-import { processSteps } from "../../siteInfo";
+import PageLayout from "../../../components/layout/PageLayout";
+import ProcessStep from "../../../components/process/ProcessStep";
+import { processSteps } from "../../../siteInfo";
 
 const index = () => {
     return (
