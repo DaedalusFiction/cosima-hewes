@@ -270,17 +270,17 @@ const galleryCategories = [
             },
             {
                 name: "fowl and fauna",
-                href: "/gallery/animals/fowlandfauna",
+                href: "/gallery/animals/fowl and fauna",
                 image: { url: "/images/placeholder.webp", alt: "alt text" },
             },
             {
                 name: "cows and horses",
-                href: "/gallery/animals/cowsandhorses",
+                href: "/gallery/animals/cows and horses",
                 image: { url: "/images/placeholder.webp", alt: "alt text" },
             },
             {
                 name: "cats and dogs",
-                href: "/gallery/animals/catsanddogs",
+                href: "/gallery/animals/cats and dogs",
                 image: { url: "/images/placeholder.webp", alt: "alt text" },
             },
         ],
@@ -293,7 +293,7 @@ const galleryCategories = [
     },
     {
         name: "fantasy farm",
-        href: "/gallery/fantasyfarm",
+        href: "/gallery/fantasy farm",
         image: { url: "/images/placeholder.webp", alt: "alt text" },
         subCategories: [],
     },
@@ -341,7 +341,7 @@ const leadProfile = {
     image: { url: "/images/about1.webp", alt: "cosima and her partner" },
     name: "Cosima Hewes",
     content:
-        "After graduating from the university of Vermont in 1990, I moved to a rural commune near Charlottesville, Virginia Where I milked cows, wove hammocks and learned carpentry skills which would later come in handy. Some days, after fulfilling my weekly 48hr work obligation, I painted in the loft of a dusty barn and then in an old pillow shop where I'd managed to carve out studio space and began my delve into oil paints with a series of surreal portraits. /\n\nTen years later, my husband and I moved to western MA where after a long search, we purchased a run down house on a scrappy plot of land. With lots of love and many hardworking hours, we've sculpted our Ashfield property into the sustainable homestead we recently christened “Jumping Goat Farm.” Most of the work you will see here was created in the post and beam studio where I now work.",
+        "After graduating from the university of Vermont in 1990, I moved to a rural commune near Charlottesville, Virginia Where I milked cows, wove hammocks and learned carpentry skills which would later come in handy. Some days, after fulfilling my weekly 48hr work obligation, I painted in the loft of a dusty barn and then in an old pillow shop where I'd managed to carve out studio space and began my delve into oil paints with a series of surreal portraits. \n\nTen years later, my husband and I moved to western MA where after a long search, we purchased a run down house on a scrappy plot of land. With lots of love and many hardworking hours, we've sculpted our Ashfield property into the sustainable homestead we recently christened “Jumping Goat Farm.” Most of the work you will see here was created in the post and beam studio where I now work.",
 };
 
 const secondaryProfiles = [
@@ -388,7 +388,7 @@ const workContent = {
         url: "/images/work1.webp",
         alt: "a cuddly goat",
     },
-    header: "Work Header",
+    header: "",
     content:
         "With daily chores that include milking the goats, tending the chickens, feeding the cat, walking the dog(s) and working the gardens, it is no wonder that my most unassuming models are my ever companions. Sure they are cute, sure they are willing, but it is their earnest, sometimes contemplative, often silly energy that amuses and compels me to the studio.",
 };

@@ -38,7 +38,11 @@ export const getServerSideProps = async (context) => {
     const q1 = query(
         imagesRef,
 
-        where("subCategories", "array-contains", subCategory)
+        where(
+            "subCategories",
+            "array-contains",
+            subCategory.split(" ").join("")
+        )
     );
 
     const queriedDocuments = await getDocs(q1);
