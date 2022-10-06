@@ -37,7 +37,7 @@ const header = {
 // 3. Home
 
 const heroContent = {
-    image: { url: "/images/hero.webp", alt: "alt hero text" },
+    image: { url: "/images/homeGallery/home2.webp", alt: "alt hero text" },
     primaryText: "ARTIST PORTFOLIO TEMPLATE",
     secondaryText: "Created by FictionalWeb.com",
     buttonOne: {
@@ -51,8 +51,8 @@ const homeGalleryContent = {
     images: [
         { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home1.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home2.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home3.webp", alt: "alt homeGallery/home" },
+        { url: "/images/hero.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home4.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home5.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home6.webp", alt: "alt homeGallery/home" },

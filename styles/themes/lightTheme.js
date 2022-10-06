@@ -4,7 +4,9 @@ let lightTheme = createTheme({
     palette: {
         primary: {
             main: "#FFBA49",
-            off: "#f7d195",
+            off: "#c95f3c",
+            // off: "#db9d38", //slightly darker
+            // off: "#f7d195",
         },
         secondary: {
             main: "#1B998B",

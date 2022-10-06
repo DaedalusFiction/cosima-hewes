@@ -6,7 +6,7 @@ import { pages, siteName, heroContent } from "../../siteInfo";
 import NativeImage from "../general/NativeImage.js";
 
 const heroText = siteName;
-// const color = lightTheme.palette.primary.off;
+const color = lightTheme.palette.primary.off;
 
 const Hero = () => {
     return (
@@ -28,6 +28,7 @@ const Hero = () => {
                     variant="h1"
                     sx={{
                         textAlign: "center",
+                        color: color,
                         fontWeight: "900",
                         fontSize: "clamp(4rem, 12vw, 20rem)",
                         writingMode: { xs: "vertical-lr", md: "inherit" },
@@ -58,7 +59,7 @@ const Hero = () => {
                         fontWeight: "900",
                         fontSize: "clamp(4rem, 12vw, 20rem)",
                         color: "transparent",
-                        WebkitTextStroke: `4px ${lightTheme.palette.custom.light}`,
+                        WebkitTextStroke: `4px ${color}`,
                         transition: "300ms",
                         opacity: { xs: "0", md: "70%" },
                         "&:hover": {
