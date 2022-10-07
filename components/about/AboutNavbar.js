@@ -6,10 +6,11 @@ const AboutNavbar = () => {
     return (
         <Box
             sx={{
-                margin: "2em 0",
+                margin: "2em 0 0 0",
                 display: "flex",
                 justifyContent: "center",
                 gap: "1em",
+                flexWrap: "wrap",
             }}
         >
             {/* pages[2] returns About subpages from /siteinfo */}
