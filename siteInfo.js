@@ -49,19 +49,19 @@ const heroContent = {
 
 const homeGalleryContent = {
     images: [
-        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home1.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home3.webp", alt: "alt homeGallery/home" },
-        { url: "/images/hero.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home4.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home5.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home6.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home7.webp", alt: "alt homeGallery/home" },
+        {
+            url: "/images/placeholder.webp",
+            alt: "alt homeGallery/home",
+        },
+        { url: "/images/homeGallery/home6.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home3.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home1.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home5.webp", alt: "alt homeGallery/home" },
+        { url: "/images/hero.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home8.webp", alt: "alt homeGallery/home" },
         { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
-        { url: "/images/homeGallery/home0.webp", alt: "alt homeGallery/home" },
+        { url: "/images/homeGallery/home4.webp", alt: "alt homeGallery/home" },
     ],
     text: "Art inspired by life inspired by art inspired by life etc.",
 };

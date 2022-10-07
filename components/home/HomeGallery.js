@@ -64,7 +64,7 @@ const HomeGallery = ({ images }) => {
                         <NativeImage maxSize={2000} image={images[6]} />
                     </Box>
                 </Grid>
-                {/* <Grid item xs={12} lg={5}>
+                <Grid item xs={12} lg={5}>
                     <Box
                         sx={{
                             display: "flex",
@@ -86,7 +86,7 @@ const HomeGallery = ({ images }) => {
                         <NativeImage maxSize={2000} image={images[9]} />
                     </Box>
                 </Grid>
-                <Grid item xs={12}>
+                {/*<Grid item xs={12}>
                     <Box
                         className="flex-center"
                         sx={{ height: "100%", width: "100%", padding: "2rem" }}

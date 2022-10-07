@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { Container } from "@mui/system";
 import NativeImage from "../../../components/general/NativeImage";
 import { studioContent } from "../../../siteInfo";
 import PageLayout from "../../../components/layout/PageLayout";
