@@ -294,7 +294,7 @@ const galleryCategories = [
     {
         name: "fantasy farm",
         href: "/gallery/fantasy farm",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/hero.webp", alt: "alt text" },
         subCategories: [],
     },
     {
