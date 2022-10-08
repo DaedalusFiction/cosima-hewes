@@ -305,13 +305,19 @@ const galleryCategories = [
     },
     {
         name: "the female collective",
-        href: "/gallery/thefemalecollective",
+        href: "/gallery/the female collective",
         image: { url: "/images/placeholder.webp", alt: "alt text" },
         subCategories: [],
     },
     {
         name: "surreal",
         href: "/gallery/surreal",
+        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        subCategories: [],
+    },
+    {
+        name: "black and white",
+        href: "/gallery/black and white",
         image: { url: "/images/placeholder.webp", alt: "alt text" },
         subCategories: [],
     },
