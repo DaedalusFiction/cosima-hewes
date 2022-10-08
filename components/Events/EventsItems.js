@@ -11,13 +11,13 @@ const EventsItems = () => {
     };
     return (
         <Container className="section" maxWidth="lg">
-            <Typography
+            {/* <Typography
                 variant="h2"
                 onClick={handle}
                 sx={{ marginBottom: ".5em" }}
             >
                 Upcoming:
-            </Typography>
+            </Typography> */}
             <Box
                 sx={{
                     display: "flex",
