@@ -35,15 +35,15 @@ const Project = ({ image }) => {
                                 {image.fields.map((field, index) => {
                                     return (
                                         <Grid container key={index}>
-                                            <Grid item xs={4}>
+                                            {/* <Grid item xs={4}>
                                                 <Typography
                                                     variant="subtitle2"
                                                     sx={{ fontWeight: "bold" }}
                                                 >
                                                     {field.name}:
                                                 </Typography>
-                                            </Grid>
-                                            <Grid item xs={8}>
+                                            </Grid> */}
+                                            <Grid item xs={12}>
                                                 <Typography
                                                     variant="subtitle2"
                                                     sx={{
@@ -57,15 +57,15 @@ const Project = ({ image }) => {
                                     );
                                 })}
                                 <Grid container>
-                                    <Grid item xs={4}>
+                                    {/* <Grid item xs={4}>
                                         <Typography
                                             variant="subtitle2"
                                             sx={{ fontWeight: "bold" }}
                                         >
                                             Subcategories:
                                         </Typography>
-                                    </Grid>
-                                    <Grid item xs={8}>
+                                    </Grid> */}
+                                    <Grid item xs={12}>
                                         {
                                             <Typography
                                                 variant="subtitle2"
