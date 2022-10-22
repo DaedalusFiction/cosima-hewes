@@ -9,7 +9,6 @@ const AboutNavbar = () => {
                 margin: "2em 0 0 0",
                 display: "flex",
                 justifyContent: "center",
-                gap: ".5em",
                 flexWrap: "wrap",
             }}
         >

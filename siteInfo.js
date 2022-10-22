@@ -549,7 +549,7 @@ const pages = [
     { name: "GALLERY", href: "/gallery", subPages: galleryCategories },
     {
         name: "ABOUT",
-        href: "/about",
+        href: "/about/artist",
         subPages: [
             { name: "The Artist", href: "/about/artist" },
             { name: "The Studio", href: "/about/studio" },
