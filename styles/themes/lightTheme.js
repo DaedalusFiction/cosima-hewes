@@ -42,7 +42,7 @@ lightTheme = createTheme(lightTheme, {
             // color: lightTheme.palette.primary.off,
             fontWeight: "400",
             lineHeight: ".85em",
-            fontSize: "clamp(3.5rem, 5vw, 7rem)",
+            fontSize: "clamp(3rem, 5vw, 7rem)",
         },
         h2: {
             color: lightTheme.palette.custom.light,

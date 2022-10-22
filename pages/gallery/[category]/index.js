@@ -7,20 +7,11 @@ import PageLayout from "../../../components/layout/PageLayout";
 import { galleryCategories } from "../../../siteInfo";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../../firebase";
-import { useEffect } from "react";
 
 const Projects = ({ images }) => {
     const router = useRouter();
-    const [title, setTitle] = useState("gallery");
     const { category } = router.query;
-
-    useEffect(() => {
-        galleryCategories.forEach((galleryCategory) => {
-            if (galleryCategory.name.split(" ").join("") === category) {
-                setTitle(galleryCategory.name.toUpperCase());
-            }
-        });
-    }, [category]);
+    const title = category.toUpperCase();
 
     return (
         <PageLayout name={title}>
@@ -29,14 +20,6 @@ const Projects = ({ images }) => {
                     galleryCategory.name === category &&
                     galleryCategory.subCategories.length > 0 && (
                         <Grid className="section" container spacing={4}>
-                            <Grid item xs={12}>
-                                <Typography
-                                    variant="h4"
-                                    sx={{ textAlign: "center" }}
-                                >
-                                    Subcategories
-                                </Typography>
-                            </Grid>
                             {galleryCategory.subCategories.map(
                                 (subCategory, index) => {
                                     return (

@@ -10,7 +10,7 @@ const index = () => {
         <PageLayout name="THE ARTIST">
             <AboutNavbar />
             <Box className="section">
-                <Grid container spacing={6}>
+                <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <SizedImage
                             height="30rem"

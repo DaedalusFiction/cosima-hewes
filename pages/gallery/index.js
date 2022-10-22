@@ -6,13 +6,7 @@ import GalleryCategoryPreview from "../../components/gallery/GalleryCategoryPrev
 
 const Projects = () => {
     return (
-        <PageLayout name="GALLERY">
-            <Typography
-                variant="h4"
-                sx={{ textAlign: "center", marginTop: "2em" }}
-            >
-                Categories
-            </Typography>
+        <PageLayout name="GALLERIES">
             <Grid className="section" container spacing={4}>
                 {galleryCategories.map((category, index) => {
                     return (

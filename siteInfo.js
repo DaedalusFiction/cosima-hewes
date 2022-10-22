@@ -264,61 +264,82 @@ const galleryCategories = [
                 name: "goats",
                 href: "/gallery/animals/goats",
                 image: {
-                    url: "/images/placeholder.webp",
+                    url: "/images/previews/goatspreview.jpg",
                     alt: "alt gallery image text",
                 },
             },
             {
                 name: "fowl and fauna",
                 href: "/gallery/animals/fowl and fauna",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: {
+                    url: "/images/previews/fowlpreview.jpg",
+                    alt: "alt text",
+                },
             },
             {
                 name: "cows and horses",
                 href: "/gallery/animals/cows and horses",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: {
+                    url: "/images/previews/cowshorsespreview.jpg",
+                    alt: "alt text",
+                },
             },
             {
                 name: "cats and dogs",
                 href: "/gallery/animals/cats and dogs",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: {
+                    url: "/images/previews/catsdogspreview.jpg",
+                    alt: "alt text",
+                },
             },
         ],
     },
     {
         name: "landscapes",
         href: "/gallery/landscapes",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: {
+            url: "/images/previews/landscapespreview.jpg",
+            alt: "alt text",
+        },
         subCategories: [],
     },
     {
         name: "fantasy farm",
         href: "/gallery/fantasy farm",
-        image: { url: "/images/hero.webp", alt: "alt text" },
+        image: { url: "/images/homeGallery/home2.webp", alt: "alt text" },
         subCategories: [],
     },
     {
         name: "portraits",
         href: "/gallery/portraits",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: {
+            url: "/images/previews/portraitspreview.jpg",
+            alt: "alt text",
+        },
         subCategories: [],
     },
     {
         name: "the female collective",
         href: "/gallery/the female collective",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: {
+            url: "/images/previews/fempreview.jpg",
+            alt: "alt text",
+        },
         subCategories: [],
     },
     {
         name: "surreal",
         href: "/gallery/surreal",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/previews/surrealpreview.jpg", alt: "alt text" },
         subCategories: [],
     },
     {
         name: "black and white",
         href: "/gallery/black and white",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: {
+            url: "/images/previews/blackwhitepreview.jpg",
+            alt: "alt text",
+        },
         subCategories: [],
     },
 ];
@@ -411,8 +432,11 @@ const commissionsContent = {
     },
     images: [
         { url: "/images/commissions1.webp", alt: "commissioned artwork" },
+        { url: "/images/commissionsBabs.jpg", alt: "commissioned artwork" },
         { url: "/images/commissions2.webp", alt: "commissioned artwork" },
+        { url: "/images/commissionsGeorgia.jpg", alt: "commissioned artwork" },
         { url: "/images/commissions3.webp", alt: "commissioned artwork" },
+        { url: "/images/commissionsTwins.jpg", alt: "commissioned artwork" },
     ],
 };
 

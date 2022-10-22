@@ -6,9 +6,10 @@ import {
 } from "../../siteInfo";
 import PageLayout from "../../components/layout/PageLayout";
 import Services from "../../components/home/Services";
-import SizedImage from "../../components/general/SizedImage";
+import NativeImage from "../../components/general/NativeImage";
 import { Container } from "@mui/system";
 import Link from "next/link";
+import lightTheme from "../../styles/themes/lightTheme";
 
 const index = () => {
     return (
@@ -17,7 +18,11 @@ const index = () => {
                 <Box className="section">
                     <Container maxWidth="sm">
                         <Typography
-                            sx={{ textAlign: "center", fontStyle: "italic" }}
+                            sx={{
+                                textAlign: "center",
+                                fontStyle: "italic",
+                                color: lightTheme.palette.custom.lightMuted,
+                            }}
                         >
                             Commissioned works are a wonderful gift of love.
                             Contact me for more information about the process
@@ -39,11 +44,7 @@ const index = () => {
                         {commissionsContent.images.map((image, index) => {
                             return (
                                 <Grid key={index} item xs={12} md={4}>
-                                    <SizedImage
-                                        height="25rem"
-                                        width="100%"
-                                        image={image}
-                                    />
+                                    <NativeImage maxSize={800} image={image} />
                                 </Grid>
                             );
                         })}
